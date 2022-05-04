@@ -1,12 +1,63 @@
-body{
-    background-color: white;
+@mixin heading ($bColor) {
+    background-color: $bColor;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;   
 }
 
-h1 {
-    background-image: url('./resources/pattern.jpeg');
-    font-family: Helvetica;
-    font-size: 100px;
+@mixin blue-text {
+    color: blue;
     font-weight: bold;
-    color: khaki;
 }
 
+body{
+    font-family: Helvetica;
+    background-color: white;
+    color: black;
+}
+
+.top{
+    background-image: url("./pattern.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__heading{
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 100px;
+        font-weight: bold;
+        color: khaki;
+    }
+}
+
+.brushes {
+    &__heading{
+        @include heading(mediumspringgreen);
+    }
+    &__description {
+        &--blue{
+            @include blue-text;
+        }
+    }
+}
+
+.frames {
+    &__heading {
+        @include heading(lightcoral);
+    }
+    &__description {
+        &--blue {
+            @include blue-text;
+        }
+    }
+}
+
+.paint {
+    &__heading {
+        @include heading(skyblue);
+    }
+    &__description {
+        &--blue {
+            @include blue-text;
+        }
+    }
+}

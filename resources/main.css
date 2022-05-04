@@ -1,12 +1,56 @@
 body {
+  font-family: Helvetica;
   background-color: white;
+  color: black;
 }
 
-h1 {
-  background-image: url("./resources/pattern.jpeg");
+.top {
+  background-image: url("./pattern.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top__heading {
+  text-align: center;
   font-family: Helvetica;
   font-size: 100px;
   font-weight: bold;
   color: khaki;
+}
+
+.brushes__heading {
+  background-color: mediumspringgreen;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.brushes__description--blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.frames__heading {
+  background-color: lightcoral;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.frames__description--blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.paint__heading {
+  background-color: skyblue;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.paint__description--blue {
+  color: blue;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
